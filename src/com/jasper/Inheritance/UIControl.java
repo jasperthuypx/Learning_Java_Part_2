@@ -1,6 +1,6 @@
 package com.jasper.Inheritance;
 
-public class UIControl {
+public abstract class UIControl {
     private boolean isEnabled = true;
 
     public UIControl(boolean isEnabled) {
@@ -19,4 +19,7 @@ public class UIControl {
     public boolean isEnabled() {
         return isEnabled;
     }
+
+    // all sub class must override this method
+    public abstract void render();
 }

@@ -19,6 +19,10 @@ public class TextBox extends UIControl {
 
     public void clearText() {
         this.text = "";
+    }
 
+    @Override
+    public void render() {
+        System.out.println("HIHI TextBox");
     }
 }
