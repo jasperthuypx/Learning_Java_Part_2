@@ -5,10 +5,14 @@ public class TextBox extends UIControl {
 
     public TextBox() {
         // TODO Review
-        super(false);
+        super(true);
         System.out.println("TextBox");
     }
 
+    @Override
+    public String toString() {
+        return text;
+    }
     public void setText(String text) {
         this.text = text;
     }
